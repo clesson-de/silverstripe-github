@@ -15,7 +15,7 @@ Promotes GitHub repositories on your website. Repository metadata (name, descrip
 - PHP 8.3+
 - Silverstripe Framework ^6.0
 - Silverstripe Admin ^3.0
-- DNADesign Elemental ^7.0
+- DNADesign Elemental ^6.2 or ^7.0
 - Guzzle HTTP ^7.0
 
 ## Supported versions

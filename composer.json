@@ -16,10 +16,11 @@
         "silverstripe/framework": "^6.0",
         "silverstripe/admin": "^3.0",
         "guzzlehttp/guzzle": "^7.0",
-        "dnadesign/silverstripe-elemental": "^7.0"
+        "dnadesign/silverstripe-elemental": "^6.2 || ^7.0"
     },
     "require-dev": {
-        "clesson-de/silverstripe-codeguard": "^0.0.3"
+        "clesson-de/silverstripe-codeguard": "^0.0.3",
+        "phpunit/phpunit": "^11.5"
     },
     "autoload": {
         "psr-4": {
