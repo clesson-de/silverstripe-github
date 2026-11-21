@@ -1,0 +1,114 @@
+de:
+  Clesson\Silverstripe\GitHub\Common:
+    ID: 'ID'
+    CREATED: 'Erstellt'
+    LAST_EDITED: 'Zuletzt geändert'
+
+  Clesson\Silverstripe\GitHub\Admins\GitHubAdmin:
+    MENUTITLE: 'GitHub'
+
+  Clesson\Silverstripe\GitHub\Models\GitHubConfig:
+    TITLE: 'GitHub-Konfiguration'
+    API_TOKEN: 'API Token'
+    API_TOKEN_DESCRIPTION: 'GitHub Personal Access Token. Erforderlich für die Synchronisierung (5.000 Requests/Stunde). Ohne Token ist die API auf 60 Requests/Stunde begrenzt.'
+    ACCOUNTS: 'Accounts'
+    REPOSITORIES: 'Repositories'
+    SYNCHRONIZATION: 'Synchronisierung'
+    SYNC_LOGS: 'Sync-Protokoll'
+    ADMINISTRATION: 'Administration'
+
+  Clesson\Silverstripe\GitHub\Models\GitHubAccount:
+    SINGULARNAME: 'Account'
+    PLURALNAME: 'Accounts'
+    USERNAME: 'Benutzername'
+    ACTIVE: 'Aktiv'
+    REPOSITORIES: 'Repositories'
+    REPOSITORY_COUNT: 'Repositories'
+    UNTITLED: 'Neuer Account'
+
+  Clesson\Silverstripe\GitHub\Models\GitHubRepository:
+    SINGULARNAME: 'Repository'
+    PLURALNAME: 'Repositories'
+    NAME: 'Name'
+    FULL_NAME: 'Vollständiger Name'
+    DESCRIPTION: 'Beschreibung'
+    HTML_URL: 'URL'
+    LANGUAGE: 'Sprache'
+    DEFAULT_BRANCH: 'Standard-Branch'
+    IS_FORK: 'Fork'
+    STARGAZERS_COUNT: 'Sterne'
+    FORKS_COUNT: 'Forks'
+    OPEN_ISSUES_COUNT: 'Offene Issues'
+    LATEST_TAG: 'Letzter Tag'
+    HAS_README: 'Hat README'
+    README_URL: 'README-URL'
+    DOWNLOADS_COUNT: 'Downloads'
+    YES: 'Ja'
+    'NO': 'Nein'
+    STATUS: 'Status'
+    LAST_SYNCED_AT: 'Zuletzt synchronisiert'
+    GITHUB_CREATED_AT: 'Erstellt auf GitHub'
+    GITHUB_UPDATED_AT: 'Aktualisiert auf GitHub'
+    ACCOUNT: 'Account'
+    PROMOTION_TITLE: 'Titel'
+    PROMOTION_DESCRIPTION: 'Beschreibung'
+    PROMOTION_IMAGE: 'Bild'
+    TAB_PROMOTION: 'Promotion'
+    TAB_METADATA: 'Metadaten'
+    UNTITLED: 'Neues Repository'
+
+  Clesson\Silverstripe\GitHub\Models\GitHubSyncLog:
+    SINGULARNAME: 'Sync-Protokolleintrag'
+    PLURALNAME: 'Sync-Protokolleinträge'
+    LOG: 'Protokoll'
+    TITLE: 'Sync-Protokoll vom {date}'
+
+  Clesson\Silverstripe\GitHub\Constants\RepositoryStatus:
+    ACTIVE: 'Aktiv'
+    DELETED: 'Gelöscht'
+
+  Clesson\Silverstripe\GitHub\Forms\GridField\GridFieldFilter_Account:
+    LABEL: 'Account'
+    ALL_ACCOUNTS: 'Alle Accounts'
+
+  Clesson\Silverstripe\GitHub\Forms\GridField\GridFieldFilter_Language:
+    LABEL: 'Sprache'
+    ALL_LANGUAGES: 'Alle Sprachen'
+
+  Clesson\Silverstripe\GitHub\Elements\GitHubRepositoryListElement:
+    SINGULARNAME: 'GitHub Repository-Liste'
+    PLURALNAME: 'GitHub Repository-Listen'
+    TYPE: 'GitHub Repositories'
+    FILTER_NAME: 'Nach Name filtern'
+    FILTER_NAME_DESCRIPTION: 'Nur Repositories anzeigen, deren Name diesen Text enthält.'
+    FILTER_LANGUAGES: 'Nach Sprache filtern'
+    FILTER_ACCOUNTS: 'Nach Account filtern'
+    SORT_FIELD: 'Sortieren nach'
+    SORT_DIRECTION: 'Sortierrichtung'
+    LIMIT: 'Limit'
+    LIMIT_DESCRIPTION: 'Maximale Anzahl angezeigter Repositories. Leer oder 0 für kein Limit.'
+    ACCOUNTS_SELECTED: 'Account(s)'
+    NAME_CONTAINS: 'Name: "{name}"'
+    ALL_REPOSITORIES: 'Alle Repositories'
+    NO_REPOSITORIES: 'Keine Repositories gefunden.'
+
+  Clesson\Silverstripe\GitHub\Elements\GitHubRepositorySingleElement:
+    SINGULARNAME: 'GitHub Repository (Einzeln)'
+    PLURALNAME: 'GitHub Repositories (Einzeln)'
+    TYPE: 'GitHub Repository'
+    NO_REPOSITORY: 'Kein Repository ausgewählt.'
+
+  Clesson\Silverstripe\GitHub\Constants\RepositorySortField:
+    NAME: 'Name'
+    LANGUAGE: 'Sprache'
+    GITHUB_UPDATED_AT: 'Aktualisiert auf GitHub'
+    GITHUB_CREATED_AT: 'Erstellt auf GitHub'
+
+  Clesson\Silverstripe\GitHub\Constants\SortDirection:
+    ASC: 'Aufsteigend'
+    DESC: 'Absteigend'
+
+  Clesson\Silverstripe\GitHub\Forms\GridField\GridFieldFilter_RepoStatus:
+    LABEL: 'Status'
+    ALL_STATUSES: 'Alle Status'
+

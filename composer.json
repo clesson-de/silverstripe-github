@@ -1,0 +1,32 @@
+{
+    "name": "clesson-de/silverstripe-github",
+    "description": "GitHub Repository Management für SilverStripe 6",
+    "type": "silverstripe-vendormodule",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kai Feldmaier",
+            "email": "kai.feldmaier@clesson.de",
+            "homepage": "https://clesson.de"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "ext-json": "*",
+        "silverstripe/framework": "^6.0",
+        "silverstripe/admin": "^3.0",
+        "guzzlehttp/guzzle": "^7.0",
+        "dnadesign/silverstripe-elemental": "^7.0"
+    },
+    "require-dev": {
+        "clesson-de/silverstripe-codeguard": "^0.0.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Clesson\\Silverstripe\\GitHub\\": "src/"
+        }
+    },
+    "extra": {
+        "expose": []
+    }
+}
