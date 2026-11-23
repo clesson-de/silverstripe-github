@@ -18,7 +18,7 @@ Promotes GitHub repositories on your website. Repository metadata (name, descrip
 - DNADesign Elemental ^6.2 or ^7.0
 - Guzzle HTTP ^7.0
 
-Silverstripe Fluent is optional. When installed, repository promotion titles and descriptions are translatable.
+Silverstripe Fluent is optional. When installed, repository promotion titles, descriptions, and images can be localized separately for each language.
 
 ## Supported versions
 

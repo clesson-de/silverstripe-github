@@ -38,5 +38,6 @@ if (class_exists(FluentExtension::class)) {
     Config::modify()->merge(GitHubRepository::class, 'translate', [
         'PromotionTitle',
         'PromotionDescription',
+        'PromotionImageID',
     ]);
 }

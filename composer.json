@@ -23,7 +23,7 @@
         "phpunit/phpunit": "^11.5"
     },
     "suggest": {
-        "tractorcow/silverstripe-fluent": "Enables translation of repository promotion titles and descriptions."
+        "tractorcow/silverstripe-fluent": "Enables translation of repository promotion titles, descriptions, and images."
     },
     "autoload": {
         "psr-4": {
