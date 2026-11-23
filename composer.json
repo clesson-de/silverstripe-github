@@ -22,6 +22,9 @@
         "clesson-de/silverstripe-codeguard": "^0.0.3",
         "phpunit/phpunit": "^11.5"
     },
+    "suggest": {
+        "tractorcow/silverstripe-fluent": "Enables translation of repository promotion titles and descriptions."
+    },
     "autoload": {
         "psr-4": {
             "Clesson\\Silverstripe\\GitHub\\": "src/"

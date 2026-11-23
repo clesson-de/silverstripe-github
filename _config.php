@@ -1,7 +1,10 @@
 <?php
 
+use Clesson\Silverstripe\GitHub\Models\GitHubRepository;
+use SilverStripe\Core\Config\Config;
 use SilverStripe\Forms\HTMLEditor\HTMLEditorConfig;
 use SilverStripe\TinyMCE\TinyMCEConfig;
+use TractorCow\Fluent\Extension\FluentExtension;
 
 // Register custom HTMLEditorConfig for the GitHubRepository PromotionDescription field.
 call_user_func(function () {
@@ -26,5 +29,14 @@ call_user_func(function () {
     $config->setButtonsForLine(3, []);
 
     HTMLEditorConfig::set_config('GitHubRepository_PromotionDescription_EditorConfig', $config);
+    HTMLEditorConfig::set_config('GitHubRepository_PromotionDescription_EditorConfig', $config);
 });
-
+if (class_exists(FluentExtension::class)) {
+    Config::modify()->merge(GitHubRepository::class, 'extensions', [
+        FluentExtension::class,
+    ]);
+    Config::modify()->merge(GitHubRepository::class, 'translate', [
+        'PromotionTitle',
+        'PromotionDescription',
+    ]);
+}
