@@ -7,10 +7,17 @@
         <div class="github-repository-list__items">
             <% loop $FilteredRepositories %>
                 <div class="github-repository-list__item">
+                    <div class="github-repository-list__image" style="height: 200px">
+                        <% if $PromotionImage %>
+                            $PromotionImage.Fill(600, 200)
+                        <% end_if %>
+                    </div>
                     <h3 class="github-repository-list__name">
-                        <a href="$HtmlUrl" target="_blank" rel="noopener noreferrer">$Name</a>
+                        <a href="$HtmlUrl" target="_blank" rel="noopener noreferrer"><% if $PromotionTitle %>$PromotionTitle<% else %>$Name<% end_if %></a>
                     </h3>
-                    <% if $Description %>
+                    <% if $PromotionDescription %>
+                        <div class="github-repository-list__description">$PromotionDescription</div>
+                    <% else_if $Description %>
                         <p class="github-repository-list__description">$Description</p>
                     <% end_if %>
                     <div class="github-repository-list__meta">
@@ -31,4 +38,3 @@
         <p class="github-repository-list__empty"><%t Clesson\Silverstripe\GitHub\Elements\GitHubRepositoryListElement.NO_REPOSITORIES 'No repositories found.' %></p>
     <% end_if %>
 </div>
-
